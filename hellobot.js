@@ -1,7 +1,7 @@
 module.exports = function (req, res, next) {
 	var userName = req.body.user_name;
 	var botPayload = {
-		text : 'Hello, ' + userName + '!'
+		text : 'FÖSSARI! https://www.youtube.com/watch?v=bsrc3vCL13E'
 	};
 
 	// avoid infinite loop
