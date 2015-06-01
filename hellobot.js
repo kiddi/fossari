@@ -2,7 +2,10 @@ module.exports = function (req, res, next) {
 	var d = new Date();
 	var n = d.getDay();
 	var userName = req.body.user_name;
+	var requestText = req.body.text;
 	
+	console.log(requestText)
+
 	if (n === 5) {
 		var botPayload = { "text": "FÖSSARI! https://www.youtube.com/watch?v=bsrc3vCL13E" };
 	} else if (n === 6) {
