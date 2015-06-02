@@ -1,15 +1,15 @@
 module.exports = function (req, res, next) {
 	var d = new Date();
-	var day = d.getDay();
+	var n = d.getDay();
 	var userName = req.body.user_name;
 	var requestText = req.body.text;
 	
 
 
-function slackbot(day, requestText){
+function slackbot(day, text){
 
   var n = day,
-      requestText = requestText.toLowerCase(),
+      requestText = requestText.lower(),
       responseText;
 
   if (requestText === "er fössari") {
@@ -25,10 +25,9 @@ function slackbot(day, requestText){
   };
 
   return {"text": responseText};
-
 }
 
-	var botPayload = slackbot(day, requestText)
+	var botPayload = slackbot(n, requestText);
 
 	// avoid infinite loop
 	if (userName !== 'slackbot') {
