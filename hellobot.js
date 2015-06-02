@@ -9,16 +9,26 @@ module.exports = function (req, res, next) {
 function slackbot(day, text){
 
   var n = day,
-      requestText = requestText.lower(),
+      requestText = text.toLowerCase(),
       responseText;
 
   if (requestText === "er fössari") {
-    responseText = (n === 5) && "Já" || "Nei";
+    responseText = "ÞAÐ ER ALLTAF FÖSSARI!!!!!!"
   } else if (requestText === "hvaða dagur er í dag") {
     if (n === 5) {
       responseText = "Fössari";
     } else if (n === 6) {
       responseText = "Löllari";
+    } else if (n === 0) {
+      responseText = "Sunnari";
+    } else if (n === 1) {
+      responseText = "Mannari";
+    } else if (n === 2) {
+      responseText = "Þrillari";
+    } else if (n === 3) {
+      responseText = "Millari";
+    } else if (n === 6) {
+      responseText = "Fimmari";
     } else {
       responseText = "Leiðinlegur dagur í dag";
     };
