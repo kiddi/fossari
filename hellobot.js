@@ -13,8 +13,8 @@ function slackbot(day, text){
       responseText;
 
   if (requestText === "er fössari") {
-    responseText = "ÞAÐ ER ALLTAF FÖSSARI!!!!!!"
-  } else if (requestText === "hvaða dagur er í dag") {
+    responseText = "ÞAÐ ER ALLTAF FÖSSARI!!!!!! https://www.youtube.com/watch?v=bsrc3vCL13E"
+  } else if (requestText === "hvaða dagur er í dag?" || requestText === "hvaða dagur er í dag") {
     if (n === 5) {
       responseText = "Fössari";
     } else if (n === 6) {
