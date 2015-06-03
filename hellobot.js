@@ -16,19 +16,19 @@ function slackbot(day, text){
     responseText = "ÞAÐ ER ALLTAF FÖSSARI!!!!!! https://www.youtube.com/watch?v=bsrc3vCL13E"
   } else if (requestText === "hvaða dagur er í dag?" || requestText === "hvaða dagur er í dag") {
     if (n === 5) {
-      responseText = "Fössari";
+      responseText = "Fössari! https://www.youtube.com/watch?v=bsrc3vCL13E";
     } else if (n === 6) {
       responseText = "Löllari";
     } else if (n === 0) {
       responseText = "Sunnari";
     } else if (n === 1) {
-      responseText = "Mannari";
+      responseText = "Mannari! https://www.youtube.com/watch?v=aF4CWCXirZ8";
     } else if (n === 2) {
-      responseText = "Þrillari";
+      responseText = "Þrillari! https://www.youtube.com/watch?v=avFq9errZCk";
     } else if (n === 3) {
-      responseText = "Millari";
+      responseText = "Millari! https://www.youtube.com/watch?v=8h3aql-SpyM";
     } else if (n === 6) {
-      responseText = "Fimmari";
+      responseText = "Fimmari! https://www.youtube.com/watch?v=RubBzkZzpUA";
     } else {
       responseText = "Leiðinlegur dagur í dag";
     };
