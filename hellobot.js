@@ -12,11 +12,11 @@ function slackbot(day, text){
       requestText = text.toLowerCase(),
       responseText;
 
-  if (requestText === "er fössari") {
+  if (requestText === "er fössari" || requestText === "er fössari?") {
     responseText = "ÞAÐ ER ALLTAF FÖSSARI!!!!!! https://www.youtube.com/watch?v=bsrc3vCL13E"
   } else if (requestText === "hvaða dagur er í dag?" || requestText === "hvaða dagur er í dag") {
     if (n === 5) {
-      responseText = "Fössari! https://www.youtube.com/watch?v=bsrc3vCL13E";
+      responseText = "Það. Er. FÖSSARIi! https://www.youtube.com/watch?v=bsrc3vCL13E";
     } else if (n === 6) {
       responseText = "Löllari";
     } else if (n === 0) {
@@ -27,7 +27,7 @@ function slackbot(day, text){
       responseText = "Þrillari! https://www.youtube.com/watch?v=avFq9errZCk";
     } else if (n === 3) {
       responseText = "Millari! https://www.youtube.com/watch?v=8h3aql-SpyM";
-    } else if (n === 6) {
+    } else if (n === 4) {
       responseText = "Fimmari! https://www.youtube.com/watch?v=RubBzkZzpUA";
     } else {
       responseText = "Leiðinlegur dagur í dag";
